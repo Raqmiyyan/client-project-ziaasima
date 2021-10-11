@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -13,10 +13,9 @@
 
 <body>
     <section>
+        <div class="container-fluid" style="background-image: url('tomato.jpg');" id="header2">
 
-        <div class="container-fluid" style="background-image: url('backgroundimage.jpg');" id="header">
-            <nav>
-
+            <nav class="navbar navbar-inverse navbar-fixed" id="nav-order">
                 <a href="index.html"> <img src="munch_logo.png" class="logo">
                 </a>
                 <ul>
@@ -30,165 +29,128 @@
                         <a href="Order.html">Order</a>
                     </li>
                 </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="button" class="btn" type="submit">Search</button>
+                </form>
             </nav>
-            <div class="text-box">
-
-                <p>Your Favourite Food now at Your DoorStep</p>
-                <h1>Munch</h1>
-
-                <a href="Order.html" id="button" class="btn" type="submit">Order Now! <span>&#x27F6</span></a>
-            </div>
-        </div>
-    </section>
-
-    <section>
-
-        <div class="container-fluid" id="card-bg">
-            <div class="row">
-                <div class="col-lg-4" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="Fudge cake.jpg" alt="Card one" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Today's Special</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
+            <div class="container-fluid">
+                <div class="row p-3-vh" id="menu-row">
+                    <div class="col-12 text-center" id="menu-col">
+                        <div class="main-content">
+                          <div class="heading">
+                            <div class="title l-1">
+                              Our menu
+                            </div>
+                          </div>
+                        <div class="desc m-auto" id="mar-auto">
+                           The great taste since 1972 is now available at comfort and safety of your own house.
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 ml-3" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="Mixed Grill.jpg" alt="Card two" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Chef's Special</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
+            
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#starter">Starter</a></li>
+                <li><a data-toggle="pill" href="#main">Main</a></li>
+                <li><a data-toggle="pill" href="#desserts">Desserts</a></li>
+                <li><a data-toggle="pill" href="#drinks">Drinks</a></li>
+            </ul>
+                        
+            <div class="tab-content" id="m-menu">
+                <div id="starter" class="tab-pane fade in active">
+                    <h3 class="menu-group-heading">Starter</h3>
+                    <div class="menu-group">
+                        <div class="menu-item">
+                            <img class="menu-item-image" src="Humus.jpg" alt="">
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading"></h3>
+                                    <span class="menu-item-name">Humus</span>
+                                    <span class="menu-item-id">S-001</span>
+                                    <span class="menu-item-price">5 SAR</span>
+                                </h3>
+                                <p class="menu-item-description">
+                                    Vegetarian. Might contain milk or nuts.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ml-3" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="Basbousa.jpeg" alt="Card three" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Desert Special</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
+                        <div class="menu-item">
+                            <img class="menu-item-image" src="Humus.jpg" alt="">
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading"></h3>
+                                    <span class="menu-item-name">Humus</span>
+                                    <span class="menu-item-id">S-001</span>
+                                    <span class="menu-item-price">5 SAR</span>
+                                </h3>
+                                <p class="menu-item-description">
+                                    Vegetarian. Might contain milk or nuts.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="Dolma.jpg" alt="Card four" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Our Speciality</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
+                        <div class="menu-item">
+                            <img class="menu-item-image" src="Humus.jpg" alt="">
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading"></h3>
+                                    <span class="menu-item-name">Humus</span>
+                                    <span class="menu-item-id">S-001</span>
+                                    <span class="menu-item-price">5 SAR</span>
+                                </h3>
+                                <p class="menu-item-description">
+                                    Vegetarian. Might contain milk or nuts.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ml-3" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="Humus.jpg" alt="Card five" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Humus</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
+                        <div class="menu-item">
+                            <img class="menu-item-image" src="Humus.jpg" alt="">
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading"></h3>
+                                    <span class="menu-item-name">Humus</span>
+                                    <span class="menu-item-id">S-001</span>
+                                    <span class="menu-item-price">5 SAR</span>
+                                </h3>
+                                <p class="menu-item-description">
+                                    Vegetarian. Might contain milk or nuts.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ml-3" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="icecream.jpg" alt="Card six" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Dish1</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="Orange Juice.jpg" alt="Card seven" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Dish1</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ml-3" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <img src="Vegetarian pizza.jpg" alt="Card eight" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Vegetarian Special</h5>
-                            <p class="card-text">Price</p>
-                            <a href="Order.html" id="button" class="btn">Order</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ml-3" id="speciality-card">
-                    <div class="card" style="width: 23rem;">
-                        <div class="card-body" id="card-table">
-                            <div class="table-responsive">
-                                <table class="table table-sm table-striped table-hover table-bordered align-right"
-                                    id="w-table">
-                                    <caption>*Subject to change</caption>
-                                    <thead id="t-head">
-                                        <tr>
-                                            <th scope="col">Days</th>
-                                            <th scope="col">Timing</th>
-                                        </tr>
-
-                                    </thead>
-                                    <tbody class="table-light">
-                                    <tbody>
-                                        <tr>
-                                            <td>Sunday</td>
-                                            <td>11:00-21:00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Monday</td>
-                                            <td>11:00-21:00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tuesday</td>
-                                            <td>11:00-21:00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Wednesday</td>
-                                            <td>11:00-21:00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Thursday</td>
-                                            <td>11:00-21:00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Friday</td>
-                                            <td>13:00-23:00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Saturday</td>
-                                            <td>13:00-23:00</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
+                        <div class="menu-item">
+                            <img class="menu-item-image" src="Humus.jpg" alt="">
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading"></h3>
+                                    <span class="menu-item-name">Humus</span>
+                                    <span class="menu-item-id">S-001</span>
+                                    <span class="menu-item-price">5 SAR</span>
+                                </h3>
+                                <p class="menu-item-description">
+                                    Vegetarian. Might contain milk or nuts.
+                                </p>
                             </div>
                         </div>
 
                     </div>
+                        
                 </div>
+                <div id="main" class="tab-pane fade">
+                    <h3>Main</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="desserts" class="tab-pane fade">
+                    <h3>Desserts</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="drinks" class="tab-pane fade">
+                    <h3>Drinks</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                    
             </div>
         </div>
-        </div>
-
-        </div>
     </section>
-
     <section>
+        <!-- Footer -->
+        <!-- Footer -->
         <footer class="page-footer font-small pt-4" id="footer-bg">
 
             <!-- Footer Links -->
-            <div class="container text-md-left text-white" id="footer-l">
+            <div class="container text-md-left text-white">
 
                 <!-- Grid row -->
                 <div class="row">
@@ -219,6 +181,7 @@
 
 
                     </div>
+
 
 
                     <!-- Grid column -->
@@ -294,11 +257,10 @@
 
         </footer>
         <!-- Footer -->
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"></script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
