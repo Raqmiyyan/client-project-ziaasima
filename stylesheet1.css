@@ -357,3 +357,8 @@ hr{
 #s-menu{
     background-color: #D3C4D1;
 }
+
+
+.food-image {
+ height: 100% !important;   
+}
