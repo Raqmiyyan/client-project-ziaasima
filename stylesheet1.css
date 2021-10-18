@@ -312,17 +312,7 @@ hr{
     font-weight: 700;
 
 }
-#m-grill,
-#pizza,
-#dess{
-    height: 370px;
-    width: 280px;
-}
 
-#cake{
-    height: 385px;
-    width: 280px;
-}
 #o-form .input-group-text{
     background-color: teal;
     color: white;
